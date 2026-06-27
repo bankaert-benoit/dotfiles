@@ -39,3 +39,8 @@ link_dotfiles() {
 }
 
 link_dotfiles "neovim" ".config/nvim"
+link_dotfiles "bspwm" ".config/bspwm"
+link_dotfiles "sxhkd" ".config/sxhkd"
+link_dotfiles "polybar" ".config/polybar"
+link_dotfiles "picom" ".config/picom"
+link_dotfiles "dunst" ".config/dunst"
