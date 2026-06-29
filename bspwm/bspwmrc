@@ -7,6 +7,8 @@ bspc monitor HDMI-1 -d 6 7 8 9 10
 
 bspc config border_width         2
 bspc config window_gap          12
+bspc config top_padding					24
+bspc config bottom_padding			0
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
@@ -15,10 +17,11 @@ bspc config gapless_monocle      true
 bspc config ignore_ewmh_fullscreen off
 
 bspc rule -a discord desktop='^6' follow=on focus=off
+bspc rule -a polybar manage=off floating=on border=off
 
 #AutoStart applications
-sxhkd &
 picom --config $HOME/.config/picom/picom.conf &
 dunst &
+~/.fehbg &
 $HOME/.config/polybar/launch.sh &
 (sleep 3 && discord) &
