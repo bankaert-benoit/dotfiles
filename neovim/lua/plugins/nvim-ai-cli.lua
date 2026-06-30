@@ -6,4 +6,4 @@ return {
 	     cmd = "agy",
 	   })
 	 end,
-} 
+}

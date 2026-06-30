@@ -11,13 +11,13 @@ bspc config top_padding					24
 bspc config bottom_padding			0
 
 bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+bspc config gapless_monocle      false
 
 bspc config ignore_ewmh_fullscreen off
 
-bspc rule -a discord desktop='^6' follow=on focus=off
+bspc rule -a discord desktop='^6' follow=off focus=off
 bspc rule -a polybar manage=off floating=on border=off
+bspc rule -a pavucontrol state=floating
 
 #AutoStart applications
 picom --config $HOME/.config/picom/picom.conf &
